@@ -22,3 +22,5 @@ Ejercicio_9: https://github.com/Luis-Car-199/BOOT_BIG_DATA_LC/blob/77355435ee0ee
 Ejercicio_10: https://github.com/Luis-Car-199/BOOT_BIG_DATA_LC/blob/77355435ee0ee08ee63578fb17b821e6af30299c/SQL_DW/Ejercicio_10/Ejercicio_10.sql
 
 Ejercicio_11: https://github.com/Luis-Car-199/BOOT_BIG_DATA_LC/blob/77355435ee0ee08ee63578fb17b821e6af30299c/SQL_DW/Ejercicio_11/Ejercicio_11.sql
+
+Ejercicio_12: https://github.com/Luis-Car-199/BOOT_BIG_DATA_LC/blob/80423662ab65a439f8b312f3272b4c8dc1bf55b8/SQL_DW/Ejercicio_12/Ejercicio_12%20(1).sql
