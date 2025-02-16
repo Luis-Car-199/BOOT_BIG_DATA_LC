@@ -9,7 +9,7 @@ with flag as (
     case
       when step_name = 'CUSTOMERINFOBYDNI.TX' and step_result = 'OK' then 1
       else 0
-    end as info_by_phone_lg
+    end as info_by_dni_lg
 
   from `keepcoding.steps` 
   --where step_name = 'CUSTOMERINFOBYPHONE.TX' --and step_result = 'OK'
@@ -18,7 +18,7 @@ with flag as (
 -- hay que agrupar por el max flag para quedarnos con un unico registro, si es 1 lo asignara y sino asignara un cero
 select 
   cal.ivr_id,
-  max(fla.info_by_phone_lg) as info_by_phone_lg
+  max(fla.info_by_dni_lg) as info_by_dni_lg
 from `keepcoding.calls` cal 
 left join flag fla
 on cal.ivr_id = fla.ivr_id

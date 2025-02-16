@@ -1,5 +1,24 @@
---Ejercicio_12
--- juntar todo el trabajo 
+--Ejercicio_13
+-- Crear una funcion con reemplaze los null por -999999
+
+create or replace function `keepcoding.clean_integer` (value int64)
+returns int64 as (
+  coalesce(value, -999999)
+);
+create or replace function `keepcoding.clean_string` (chain string)
+returns string as (
+  coalesce(chain, '---')
+);
+
+
+
+
+
+
+
+
+
+
 
 
 with vdn_agregation as (
@@ -255,5 +274,3 @@ group by det.calls_ivr_id,
   phone.repeated_phone_24H
 
 ;
- 
---NO ENTIENDO PORQUE AL CASTEAR EL CALLS_IVR_ID COMO INT SI QUE LOS JUNTA (NO ME DA TODO NULOS) Y AL CATEAR COMO FLOAT (QUE ERA LO QUE LLEVABA INTENTANTO HACER UN BUEN RATO) NO. COMO PARA USAR EL ROW NUMBER TUVE QUE CASTEAR EL FLOAT A INT, QUERIA HACERLO DE INT A FLOAT PARA QUE TODO ESTUVIERA IGUAL Y PORQUE COMO ES EL QUE HABIA CAMBIADO, ME ENCABEZONE CON ELLO. ¿ESPORQUE ES UN FLOAT GENERICO? INTENTE HACERLO CON FLOAT64 Y CREO QUE NO ES ESE EL TIPO AUNQUE EN EL ESQUEMA DE LA TABLA PONGA FLOAT.
